@@ -1,0 +1,18 @@
+{
+  "base_model_path": "runs/pretrain/final_model",
+  "tokenizer_path": "runs/lora/tokenizer",
+  "lora_adapter_path": "runs/ppo_head_to_tail_perm_hemo_v3_full_finetune_lam1_stable_b64_lr3e6_no_trainer_state_20260603/agent_step3000",
+  "checkpoint_mode": "full_finetune",
+  "condition_type": "head_to_tail",
+  "output_dir": "outputs/ppo_head_to_tail",
+  "output_filename": "ppo_head_to_tail_n30000.csv",
+  "num_samples": 30000,
+  "batch_size": 64,
+  "max_length": 1024,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "seed": 42,
+  "device": "cuda:0",
+  "checkpoint_tag": "step3000"
+}

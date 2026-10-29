@@ -1,0 +1,27 @@
+# Published CSV/GZIP files remain tracked; the large unpacked training file does not.
+/data/restored_train.csv
+/data/restored_train.csv.tmp
+/data/kras_kd/
+/runs/
+/results/
+/outputs/
+/output/
+/assets/
+/third_party/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+.DS_Store
+*.log
+*.pid
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.pkl
+*.ckpt
+.env
+.env.*
+configs/local/

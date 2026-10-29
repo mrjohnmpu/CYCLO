@@ -1,0 +1,25 @@
+{
+  "base_model_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+  "tokenizer_path": "/workspace/xsw/test2_runs/ppo_head_to_tail_perm_hemo_v3_full_finetune_lam1_stable_b64_lr3e6_no_trainer_state_20260603/agent_step3000",
+  "checkpoint_path": "/workspace/xsw/test2_runs/ppo_head_to_tail_perm_hemo_v3_full_finetune_lam1_stable_b64_lr3e6_no_trainer_state_20260603/agent_step3000",
+  "checkpoint_mode": "full_finetune",
+  "condition_type": "head_to_tail",
+  "output_path": "/workspace/xsw/generated_sequences_direct/ppo_head_to_tail_perm_hemo_lam1_stable_lr3e6_step3000_n30000_full_finetune_entry_20260604/ppo_head_to_tail_perm_hemo_lam1_stable_lr3e6_step3000_n30000_full_finetune_entry_20260604.csv",
+  "num_samples": 30000,
+  "batch_size": 64,
+  "requested_max_length": 1024,
+  "effective_max_length": 1024,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "seed": 42,
+  "device": "cuda:0",
+  "csv_columns": [
+    "SMILES",
+    "Valid",
+    "Cyclization",
+    "CheckpointTag",
+    "ObjectiveTag",
+    "ScorerTag"
+  ]
+}

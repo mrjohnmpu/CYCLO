@@ -1,0 +1,83 @@
+{
+  "analysis_name": "shared_vs_paper_similarity_20260921",
+  "output_root": "results/ablations/shared_vs_paper_similarity_20260921",
+  "peptide_parser_root": "third_party/peptide_parser",
+  "chemical_space_module": "evaluation/metrics/chemical_space_coverage.py",
+  "methods": {
+    "shared": {
+      "label": "Shared token+LoRA",
+      "path_template": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/{topology}_n30000.csv"
+    },
+    "paper": {
+      "label": "Paper-exact token+LoRA",
+      "path_template": "runs/lora/generation_eval_n30000/{topology}_n30000.csv"
+    }
+  },
+  "topologies": [
+    {
+      "id": "head_to_tail",
+      "display": "Head-to-tail",
+      "expected_topoacc": {
+        "shared": 0.9992,
+        "paper": 0.9991
+      }
+    },
+    {
+      "id": "sc_to_tail",
+      "display": "Side-chain-to-tail",
+      "expected_topoacc": {
+        "shared": 0.9989,
+        "paper": 0.9992
+      }
+    },
+    {
+      "id": "disulfide_bridge",
+      "display": "Disulfide-bridged",
+      "expected_topoacc": {
+        "shared": 1.0,
+        "paper": 1.0
+      }
+    }
+  ],
+  "topology_validation": {
+    "classifier": "peptide_parser_mutually_exclusive",
+    "denominator": "rdkit_valid",
+    "round_digits": 4,
+    "require_match_for_full_run": true
+  },
+  "morgan": {
+    "radius": 2,
+    "n_bits": 1024,
+    "use_chirality": false,
+    "search_backend": "fpsim2"
+  },
+  "sequence": {
+    "ngram_sizes": [
+      1,
+      2,
+      3
+    ],
+    "query_block_size": 128
+  },
+  "thresholds": [
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "runtime": {
+    "n_jobs": 8,
+    "fingerprint_chunk_size": 256
+  },
+  "figure": {
+    "formats": [
+      "pdf",
+      "svg",
+      "png",
+      "tiff"
+    ],
+    "dpi": 600
+  }
+}

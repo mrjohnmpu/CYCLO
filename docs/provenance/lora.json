@@ -1,0 +1,149 @@
+{
+  "head_to_tail": {
+    "peptide_type": "head_to_tail",
+    "timestamp": "2026-04-21T15:20:01",
+    "base_model_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+    "base_tokenizer_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+    "tokenizer_path": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/tokenizer",
+    "adapter_path": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_head_to_tail",
+    "checkpoint_dir": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_head_to_tail/checkpoints",
+    "seed": 42,
+    "split_summary": {
+      "total": 9999,
+      "train": 7999,
+      "val": 1000,
+      "test": 1000
+    },
+    "lora_config": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "c_fc"
+      ],
+      "modules_to_save": [
+        "wte"
+      ]
+    },
+    "trainable_parameters": 4005120,
+    "total_parameters": 91493376,
+    "train_loss": 0.2985071820345792,
+    "best_eval_loss": 0.28916382789611816,
+    "val_metrics": {
+      "val_loss": 0.28916382789611816,
+      "val_runtime": 7.3308,
+      "val_samples_per_second": 136.412,
+      "val_steps_per_second": 8.594,
+      "epoch": 11.0
+    },
+    "test_metrics": {
+      "test_loss": 0.28743481636047363,
+      "test_runtime": 8.0414,
+      "test_samples_per_second": 124.357,
+      "test_steps_per_second": 7.834,
+      "epoch": 11.0
+    },
+    "best_checkpoint": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_head_to_tail/checkpoints/checkpoint-875",
+    "command": "/home/xsw/workingspace/test2/model/training/lora/train.py --config /home/xsw/workingspace/test2/configs/finetune_lora.json --batch_size 16 --grad_accum_steps 4"
+  },
+  "sc_to_tail": {
+    "peptide_type": "sc_to_tail",
+    "timestamp": "2026-04-21T15:46:43",
+    "base_model_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+    "base_tokenizer_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+    "tokenizer_path": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/tokenizer",
+    "adapter_path": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_sc_to_tail",
+    "checkpoint_dir": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_sc_to_tail/checkpoints",
+    "seed": 42,
+    "split_summary": {
+      "total": 10001,
+      "train": 8001,
+      "val": 1000,
+      "test": 1000
+    },
+    "lora_config": {
+      "r": 32,
+      "lora_alpha": 64,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "c_fc"
+      ],
+      "modules_to_save": [
+        "wte"
+      ]
+    },
+    "trainable_parameters": 6364416,
+    "total_parameters": 93852672,
+    "train_loss": 0.28933101839909897,
+    "best_eval_loss": 0.2779066860675812,
+    "val_metrics": {
+      "val_loss": 0.2779066860675812,
+      "val_runtime": 7.3295,
+      "val_samples_per_second": 136.435,
+      "val_steps_per_second": 8.595,
+      "epoch": 9.0
+    },
+    "test_metrics": {
+      "test_loss": 0.2776099145412445,
+      "test_runtime": 7.8008,
+      "test_samples_per_second": 128.192,
+      "test_steps_per_second": 8.076,
+      "epoch": 9.0
+    },
+    "best_checkpoint": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_sc_to_tail/checkpoints/checkpoint-630",
+    "command": "/home/xsw/workingspace/test2/model/training/lora/train.py --config /home/xsw/workingspace/test2/configs/finetune_lora.json --batch_size 16 --grad_accum_steps 4"
+  },
+  "disulfide_bridge": {
+    "peptide_type": "disulfide_bridge",
+    "timestamp": "2026-04-21T16:24:38",
+    "base_model_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+    "base_tokenizer_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+    "tokenizer_path": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/tokenizer",
+    "adapter_path": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_disulfide_bridge",
+    "checkpoint_dir": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_disulfide_bridge/checkpoints",
+    "seed": 42,
+    "split_summary": {
+      "total": 10000,
+      "train": 8000,
+      "val": 1000,
+      "test": 1000
+    },
+    "lora_config": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "c_fc"
+      ],
+      "modules_to_save": [
+        "wte"
+      ]
+    },
+    "trainable_parameters": 4005120,
+    "total_parameters": 91493376,
+    "train_loss": 0.26704747082636904,
+    "best_eval_loss": 0.24678191542625427,
+    "val_metrics": {
+      "val_loss": 0.24678191542625427,
+      "val_runtime": 7.2987,
+      "val_samples_per_second": 137.01,
+      "val_steps_per_second": 8.632,
+      "epoch": 13.0
+    },
+    "test_metrics": {
+      "test_loss": 0.2473132610321045,
+      "test_runtime": 7.9971,
+      "test_samples_per_second": 125.046,
+      "test_steps_per_second": 7.878,
+      "epoch": 13.0
+    },
+    "best_checkpoint": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/adapter_disulfide_bridge/checkpoints/checkpoint-1125",
+    "command": "/home/xsw/workingspace/test2/model/training/lora/train.py --config /home/xsw/workingspace/test2/configs/finetune_lora.json --batch_size 16 --grad_accum_steps 4"
+  }
+}

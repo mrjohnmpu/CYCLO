@@ -1,0 +1,15 @@
+{
+  "best_model_dir": "runs/pretrain/checkpoints",
+  "final_model_path": "runs/pretrain/final_model",
+  "train_raw_path": "data/restored_train.csv",
+  "batch_size": 32,
+  "accumulation_steps": 4,
+  "epochs": 1001,
+  "warmup_steps": 3000,
+  "warmup_ratio": 0.03,
+  "lr": 5e-05,
+  "max_grad_norm": 1.0,
+  "log_step": 10,
+  "patience": 10,
+  "max_len": 1024
+}

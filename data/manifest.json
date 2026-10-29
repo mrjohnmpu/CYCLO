@@ -1,0 +1,85 @@
+{
+  "datasets": [
+    {
+      "source": "/home/xsw/workingspace/test2/data/restored_train.csv",
+      "filename": "restored_train.csv.gz",
+      "uncompressed_filename": "restored_train.csv",
+      "rows": 900000,
+      "columns": [
+        "Cyclization",
+        "SMILES"
+      ],
+      "cyclization_counts": {
+        "disulfide_bridge": 180000,
+        "linear": 360001,
+        "sc_to_tail": 179999,
+        "head_to_tail": 180000
+      },
+      "uncompressed_sha256": "f3003127a09b45bd3fb9ffdb22a45bb02fcc04135d659bc613dad04ad2796333",
+      "stored_sha256": "c52b946ca778dba68412aee6ca915e9a674adb06c30775c03444396e6ec87b87",
+      "stored_bytes": 36131159,
+      "uncompressed_bytes": 279695336
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/data/restored_validation.csv",
+      "filename": "restored_validation.csv",
+      "uncompressed_filename": "restored_validation.csv",
+      "rows": 50000,
+      "columns": [
+        "Cyclization",
+        "SMILES"
+      ],
+      "cyclization_counts": {
+        "head_to_tail": 9999,
+        "linear": 20000,
+        "disulfide_bridge": 10000,
+        "sc_to_tail": 10001
+      },
+      "uncompressed_sha256": "3c44bd9aa051fe6a85f041d9b904e17a8aa5a9bb776ec7b942fd93630aa61e54",
+      "stored_sha256": "3c44bd9aa051fe6a85f041d9b904e17a8aa5a9bb776ec7b942fd93630aa61e54",
+      "stored_bytes": 15494891,
+      "uncompressed_bytes": 15494891
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/data/restored_test.csv",
+      "filename": "restored_test.csv",
+      "uncompressed_filename": "restored_test.csv",
+      "rows": 400,
+      "columns": [
+        "Cyclization",
+        "SMILES"
+      ],
+      "cyclization_counts": {
+        "head_to_tail": 100,
+        "sc_to_tail": 100,
+        "disulfide_bridge": 100,
+        "linear": 100
+      },
+      "uncompressed_sha256": "1052bd3726b6e4b60e6d30c8494143328a62796e33ee752e75f66517734e9068",
+      "stored_sha256": "1052bd3726b6e4b60e6d30c8494143328a62796e33ee752e75f66517734e9068",
+      "stored_bytes": 123801,
+      "uncompressed_bytes": 123801
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/data/validation_original.csv",
+      "filename": "validation_original.csv",
+      "uncompressed_filename": "validation_original.csv",
+      "rows": 50000,
+      "columns": [
+        "Cyclization",
+        "Target_Mol",
+        "Source_Mol"
+      ],
+      "cyclization_counts": {
+        "head_to_tail": 9999,
+        "linear": 20000,
+        "disulfide_bridge": 10000,
+        "sc_to_tail": 10001
+      },
+      "uncompressed_sha256": "966296348491820ac285d8c6ed8541c414543cfda932b3b75fe2fecb34ec948c",
+      "stored_sha256": "966296348491820ac285d8c6ed8541c414543cfda932b3b75fe2fecb34ec948c",
+      "stored_bytes": 16441319,
+      "uncompressed_bytes": 16441319
+    }
+  ]
+}

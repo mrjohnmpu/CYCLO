@@ -1,0 +1,71 @@
+{
+  "base_model_path": "runs/pretrain/final_model",
+  "tokenizer_path": "runs/pretrain/final_model",
+  "trained_tokenizer_path": "runs/ablation_lora_only_no_token_seed42_20260913/tokenizer",
+  "split_manifest_path": "runs/ablation_token_only_frozen_prior_seed42_20260913/split_manifest.csv",
+  "expected_manifest_sha256": "4abf34a90963c537ba5ea9cbf8c73fa5d075355d19dbd31884a691db083f586c",
+  "output_dir": "runs/ablation_lora_only_no_token_seed42_20260913",
+  "generation_output_dir": "results/ablations/lora_only_no_token_seed42_20260913",
+  "peptide_types": [
+    "head_to_tail",
+    "sc_to_tail",
+    "disulfide_bridge"
+  ],
+  "lora_settings": {
+    "head_to_tail": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "c_fc"
+      ]
+    },
+    "sc_to_tail": {
+      "r": 32,
+      "lora_alpha": 64,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "c_fc"
+      ]
+    },
+    "disulfide_bridge": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "c_attn",
+        "c_proj",
+        "c_fc"
+      ]
+    }
+  },
+  "expected_vocab_size": 2140,
+  "expected_bos_token_id": 1,
+  "seed": 42,
+  "batch_size": 16,
+  "num_epochs": 20,
+  "learning_rate": 0.0001,
+  "warmup_ratio": 0.03,
+  "grad_accum_steps": 4,
+  "early_stop_patience": 4,
+  "max_length": 1024,
+  "save_total_limit": 3,
+  "log_steps": 20,
+  "weight_decay": 0.01,
+  "max_grad_norm": 1.0,
+  "max_steps": -1,
+  "num_samples": 30000,
+  "generation_batch_size": 64,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "repetition_penalty": 1.0,
+  "generation_seed": 42,
+  "device": "cuda:0",
+  "audit_frozen_parameters": false,
+  "overwrite": false
+}

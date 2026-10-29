@@ -1,0 +1,50 @@
+{
+  "expected_num_samples": 30000,
+  "train_csv": "./data/restored_train.csv",
+  "test_csv": "./data/restored_validation.csv",
+  "output_root": "results/ablations/token_vs_lora_only_seed42_20260913",
+  "entries": [
+    {
+      "method": "Token-only",
+      "slug": "token_only",
+      "cyclization": "head_to_tail",
+      "generated_csv": "results/ablations/token_only_frozen_prior_seed42_20260913/head_to_tail_n30000.csv",
+      "metrics_json": "results/ablations/token_vs_lora_only_seed42_20260913/raw_metrics/token_only/head_to_tail/metrics.json"
+    },
+    {
+      "method": "Token-only",
+      "slug": "token_only",
+      "cyclization": "sc_to_tail",
+      "generated_csv": "results/ablations/token_only_frozen_prior_seed42_20260913/sc_to_tail_n30000.csv",
+      "metrics_json": "results/ablations/token_vs_lora_only_seed42_20260913/raw_metrics/token_only/sc_to_tail/metrics.json"
+    },
+    {
+      "method": "Token-only",
+      "slug": "token_only",
+      "cyclization": "disulfide_bridge",
+      "generated_csv": "results/ablations/token_only_frozen_prior_seed42_20260913/disulfide_bridge_n30000.csv",
+      "metrics_json": "results/ablations/token_vs_lora_only_seed42_20260913/raw_metrics/token_only/disulfide_bridge/metrics.json"
+    },
+    {
+      "method": "LoRA-only",
+      "slug": "lora_only",
+      "cyclization": "head_to_tail",
+      "generated_csv": "results/ablations/lora_only_no_token_seed42_20260913/head_to_tail_n30000.csv",
+      "metrics_json": "results/ablations/token_vs_lora_only_seed42_20260913/raw_metrics/lora_only/head_to_tail/metrics.json"
+    },
+    {
+      "method": "LoRA-only",
+      "slug": "lora_only",
+      "cyclization": "sc_to_tail",
+      "generated_csv": "results/ablations/lora_only_no_token_seed42_20260913/sc_to_tail_n30000.csv",
+      "metrics_json": "results/ablations/token_vs_lora_only_seed42_20260913/raw_metrics/lora_only/sc_to_tail/metrics.json"
+    },
+    {
+      "method": "LoRA-only",
+      "slug": "lora_only",
+      "cyclization": "disulfide_bridge",
+      "generated_csv": "results/ablations/lora_only_no_token_seed42_20260913/disulfide_bridge_n30000.csv",
+      "metrics_json": "results/ablations/token_vs_lora_only_seed42_20260913/raw_metrics/lora_only/disulfide_bridge/metrics.json"
+    }
+  ]
+}

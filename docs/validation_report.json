@@ -1,0 +1,994 @@
+{
+  "checks": [
+    {
+      "name": "syntax_and_config_parse",
+      "passed": true,
+      "details": {
+        "python": 126,
+        "json": 35,
+        "shell": 2
+      }
+    },
+    {
+      "name": "complete_dataset_hashes_counts_and_unpack",
+      "passed": true,
+      "details": [
+        {
+          "filename": "restored_train.csv.gz",
+          "rows": 900000,
+          "columns": [
+            "Cyclization",
+            "SMILES"
+          ],
+          "cyclization_counts": {
+            "disulfide_bridge": 180000,
+            "linear": 360001,
+            "sc_to_tail": 179999,
+            "head_to_tail": 180000
+          },
+          "content_sha256": "f3003127a09b45bd3fb9ffdb22a45bb02fcc04135d659bc613dad04ad2796333"
+        },
+        {
+          "filename": "restored_validation.csv",
+          "rows": 50000,
+          "columns": [
+            "Cyclization",
+            "SMILES"
+          ],
+          "cyclization_counts": {
+            "head_to_tail": 9999,
+            "linear": 20000,
+            "disulfide_bridge": 10000,
+            "sc_to_tail": 10001
+          },
+          "content_sha256": "3c44bd9aa051fe6a85f041d9b904e17a8aa5a9bb776ec7b942fd93630aa61e54"
+        },
+        {
+          "filename": "restored_test.csv",
+          "rows": 400,
+          "columns": [
+            "Cyclization",
+            "SMILES"
+          ],
+          "cyclization_counts": {
+            "head_to_tail": 100,
+            "sc_to_tail": 100,
+            "disulfide_bridge": 100,
+            "linear": 100
+          },
+          "content_sha256": "1052bd3726b6e4b60e6d30c8494143328a62796e33ee752e75f66517734e9068"
+        },
+        {
+          "filename": "validation_original.csv",
+          "rows": 50000,
+          "columns": [
+            "Cyclization",
+            "Target_Mol",
+            "Source_Mol"
+          ],
+          "cyclization_counts": {
+            "head_to_tail": 9999,
+            "linear": 20000,
+            "disulfide_bridge": 10000,
+            "sc_to_tail": 10001
+          },
+          "content_sha256": "966296348491820ac285d8c6ed8541c414543cfda932b3b75fe2fecb34ec948c"
+        }
+      ]
+    },
+    {
+      "name": "retained_unittest_suite",
+      "passed": true,
+      "details": {
+        "tests_run": 27,
+        "skipped": []
+      }
+    },
+    {
+      "name": "smiles2peptide_fixture",
+      "passed": true,
+      "details": {
+        "functions_tested": 2
+      }
+    },
+    {
+      "name": "rdkit_rewards_pepinvent_and_ablation_splits",
+      "passed": true,
+      "details": {
+        "rdkit_valid": 3,
+        "rows": 4,
+        "split_summary": {
+          "head_to_tail": {
+            "total": 9999,
+            "train": 7999,
+            "val": 1000,
+            "test": 1000
+          },
+          "sc_to_tail": {
+            "total": 10001,
+            "train": 8001,
+            "val": 1000,
+            "test": 1000
+          },
+          "disulfide_bridge": {
+            "total": 10000,
+            "train": 8000,
+            "val": 1000,
+            "test": 1000
+          }
+        },
+        "ablation_manifest_sha256": "4abf34a90963c537ba5ea9cbf8c73fa5d075355d19dbd31884a691db083f586c"
+      }
+    },
+    {
+      "name": "original_reward_and_ppo_invariance",
+      "passed": true,
+      "details": "Reward mappings, rollout/GAE and PPO update ASTs unchanged"
+    },
+    {
+      "name": "plotting_smoke_synthetic_not_paper_data",
+      "passed": true,
+      "details": {
+        "synthetic_only": true,
+        "property_plot_pngs": 12,
+        "ablation_formats": [
+          "png",
+          "pdf",
+          "svg"
+        ]
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/append_smiles2peptide_columns.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/bio_parser_component_graph_batch.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/compare_shared_vs_paper_similarity.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/compute_peptide_lengths.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/compute_peptide_lengths_smarts.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/export_paper_valid_smiles_sets.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/head_to_tail_residue_composition_analysis.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/parse_smiles2peptide.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/shared_base_property_eval.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/analysis/smiles2peptide_batch.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/metrics/chemical_space_coverage.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/metrics/compute_moses_metrics.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/metrics/finalize_full_finetune_metrics.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/metrics/finalize_shared_token_lora_metrics.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/metrics/finalize_strict_token_lora_metrics.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/metrics/finalize_token_vs_lora_only_metrics.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/plots/ablation_metrics_plot.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/plots/chemical_space_coverage_plots.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/plots/data_statistic_new_plot.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/plots/distribution_plots.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/plots/head_to_tail_property_plot.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/plots/sc_disulfide_property_plot.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/property_pipeline/annotate_smiles_properties.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/property_pipeline/peptiverse_test_outputs.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/property_pipeline/plot_annotated_property_comparison.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/property_pipeline/run_property_pipeline.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/target_design/kras_scorer.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/target_design/run_kras_lora_screen.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/target_design/summarize_kras_generation.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/visualization/combine_scaffold_residue_panels.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/visualization/combine_scaffold_summary_panels.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/visualization/draw_generated_samples.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/visualization/draw_ranked_molecules.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/visualization/head_to_tail_cyclic_peptide_montage.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:evaluation/visualization/head_to_tail_scaffold_statistics.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/evaluation/pretrain/evaluate_with_mask_trainer.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/inference/Cyc_GPT_reinforce_generater_full_finetune.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/inference/generate_base_gpt2.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_kras_ppo_trace_panel.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_meth.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_ncaa.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_property_association.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_rl.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_rl_distribution_shift.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_rl_joint_property_distribution.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/plot_rl_multi.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/run_permeability_shift_analysis.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/summarize_amino_acid_family_shifts.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/train_ppo_kras_v2_full_finetune.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/reinforce/train_ppo_v3_full_finetune.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/generate_full_finetune_strict_token.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/generate_lora_only_no_token.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/generate_shared_strict_token_lora.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/generate_strict_token_lora.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/generate_token_only_frozen_prior.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/train_full_finetune_strict_token.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/train_lora_only_no_token.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/train_shared_strict_token_lora.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/train_strict_token_lora.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/ablation/train_token_only_frozen_prior.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/lora/generate.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/lora/train.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:model/training/pretrain/train_cyc_gpt_with_mask_trainer.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:scripts/baseline_evaluate.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:scripts/baseline_generate.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:scripts/baseline_train.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:scripts/prepare_data.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:scripts/run_aae_head_to_tail_baseline.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:scripts/smoke_training.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "help:utils/process_pepinvent_generated_data.py",
+      "passed": true,
+      "details": {
+        "cwd": "outside_repository",
+        "original_project_pythonpath": false
+      }
+    },
+    {
+      "name": "import_isolation",
+      "passed": true,
+      "details": [
+        {
+          "module": "__main__",
+          "path": "/home/xsw/workingspace/cyclo/scripts/validate_release.py"
+        },
+        {
+          "module": "scripts",
+          "path": "/home/xsw/workingspace/cyclo/scripts/__init__.py"
+        },
+        {
+          "module": "scripts.prepare_data",
+          "path": "/home/xsw/workingspace/cyclo/scripts/prepare_data.py"
+        },
+        {
+          "module": "evaluation",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/__init__.py"
+        },
+        {
+          "module": "evaluation.analysis",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/__init__.py"
+        },
+        {
+          "module": "evaluation.analysis.bio_parser_component_graph_batch",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/bio_parser_component_graph_batch.py"
+        },
+        {
+          "module": "test_bio_parser_component_graph",
+          "path": "/home/xsw/workingspace/cyclo/tests/test_bio_parser_component_graph.py"
+        },
+        {
+          "module": "evaluation.metrics",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/metrics/__init__.py"
+        },
+        {
+          "module": "__mp_main__",
+          "path": "/home/xsw/workingspace/cyclo/scripts/validate_release.py"
+        },
+        {
+          "module": "evaluation.metrics.chemical_space_coverage",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/metrics/chemical_space_coverage.py"
+        },
+        {
+          "module": "test_chemical_space_coverage",
+          "path": "/home/xsw/workingspace/cyclo/tests/test_chemical_space_coverage.py"
+        },
+        {
+          "module": "evaluation.analysis.compare_shared_vs_paper_similarity",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/compare_shared_vs_paper_similarity.py"
+        },
+        {
+          "module": "evaluation.analysis.shared_base_property_eval",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/shared_base_property_eval.py"
+        },
+        {
+          "module": "evaluation.metrics.finalize_shared_token_lora_metrics",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/metrics/finalize_shared_token_lora_metrics.py"
+        },
+        {
+          "module": "model",
+          "path": "/home/xsw/workingspace/cyclo/model/__init__.py"
+        },
+        {
+          "module": "model.training",
+          "path": "/home/xsw/workingspace/cyclo/model/training/__init__.py"
+        },
+        {
+          "module": "model.training.ablation",
+          "path": "/home/xsw/workingspace/cyclo/model/training/ablation/__init__.py"
+        },
+        {
+          "module": "model.shared.pipeline_utils",
+          "path": "/home/xsw/workingspace/cyclo/model/shared/pipeline_utils.py"
+        },
+        {
+          "module": "model.training.lora.dataset",
+          "path": "/home/xsw/workingspace/cyclo/model/training/lora/dataset.py"
+        },
+        {
+          "module": "model.shared.generation_utils",
+          "path": "/home/xsw/workingspace/cyclo/model/shared/generation_utils.py"
+        },
+        {
+          "module": "model.training.lora.generator",
+          "path": "/home/xsw/workingspace/cyclo/model/training/lora/generator.py"
+        },
+        {
+          "module": "model.training.lora.lora_config",
+          "path": "/home/xsw/workingspace/cyclo/model/training/lora/lora_config.py"
+        },
+        {
+          "module": "model.training.lora.trainer",
+          "path": "/home/xsw/workingspace/cyclo/model/training/lora/trainer.py"
+        },
+        {
+          "module": "model.training.lora",
+          "path": "/home/xsw/workingspace/cyclo/model/training/lora/__init__.py"
+        },
+        {
+          "module": "model.training.ablation.train_shared_strict_token_lora",
+          "path": "/home/xsw/workingspace/cyclo/model/training/ablation/train_shared_strict_token_lora.py"
+        },
+        {
+          "module": "test_shared_token_lora",
+          "path": "/home/xsw/workingspace/cyclo/tests/test_shared_token_lora.py"
+        },
+        {
+          "module": "evaluation.analysis.smiles2peptide_adapter",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/smiles2peptide_adapter.py"
+        },
+        {
+          "module": "smiles2peptide_adapter",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/smiles2peptide_adapter.py"
+        },
+        {
+          "module": "evaluation.analysis.smiles2peptide_batch",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/analysis/smiles2peptide_batch.py"
+        },
+        {
+          "module": "test_smiles2peptide_batch",
+          "path": "/home/xsw/workingspace/cyclo/tests/test_smiles2peptide_batch.py"
+        },
+        {
+          "module": "utils.release_paths",
+          "path": "/home/xsw/workingspace/cyclo/utils/release_paths.py"
+        },
+        {
+          "module": "evaluation.metrics.core",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/metrics/core.py"
+        },
+        {
+          "module": "evaluation.property_pipeline",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/property_pipeline/__init__.py"
+        },
+        {
+          "module": "evaluation.property_pipeline.data_inventory",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/property_pipeline/data_inventory.py"
+        },
+        {
+          "module": "evaluation.property_pipeline.mol_cache",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/property_pipeline/mol_cache.py"
+        },
+        {
+          "module": "evaluation.property_pipeline.rdkit_properties",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/property_pipeline/rdkit_properties.py"
+        },
+        {
+          "module": "model.reinforce",
+          "path": "/home/xsw/workingspace/cyclo/model/reinforce/__init__.py"
+        },
+        {
+          "module": "evaluation.property_pipeline.peptiverse_batch",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/property_pipeline/peptiverse_batch.py"
+        },
+        {
+          "module": "evaluation.target_design",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/target_design/__init__.py"
+        },
+        {
+          "module": "evaluation.target_design.kras_scorer",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/target_design/kras_scorer.py"
+        },
+        {
+          "module": "model.reinforce.train_ppo_kras_v2_full_finetune",
+          "path": "/home/xsw/workingspace/cyclo/model/reinforce/train_ppo_kras_v2_full_finetune.py"
+        },
+        {
+          "module": "utils.process_pepinvent_generated_data",
+          "path": "/home/xsw/workingspace/cyclo/utils/process_pepinvent_generated_data.py"
+        },
+        {
+          "module": "model.training.ablation.train_token_only_frozen_prior",
+          "path": "/home/xsw/workingspace/cyclo/model/training/ablation/train_token_only_frozen_prior.py"
+        },
+        {
+          "module": "evaluation.plots",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/plots/__init__.py"
+        },
+        {
+          "module": "evaluation.plots.head_to_tail_property_plot",
+          "path": "/home/xsw/workingspace/cyclo/evaluation/plots/head_to_tail_property_plot.py"
+        }
+      ]
+    },
+    {
+      "name": "synthetic_training_weight_updates",
+      "passed": true,
+      "details": {
+        "passed": true,
+        "synthetic_only": true,
+        "cpu_only": true,
+        "pretrain_updates": 1,
+        "pretrain_changed_parameters": [
+          "transformer.wte.weight",
+          "transformer.wpe.weight",
+          "transformer.h.0.ln_1.weight",
+          "transformer.h.0.ln_1.bias",
+          "transformer.h.0.attn.c_attn.weight",
+          "transformer.h.0.attn.c_attn.bias",
+          "transformer.h.0.attn.c_proj.weight",
+          "transformer.h.0.attn.c_proj.bias",
+          "transformer.h.0.ln_2.weight",
+          "transformer.h.0.ln_2.bias",
+          "transformer.h.0.mlp.c_fc.weight",
+          "transformer.h.0.mlp.c_fc.bias",
+          "transformer.h.0.mlp.c_proj.weight",
+          "transformer.h.0.mlp.c_proj.bias",
+          "transformer.ln_f.weight",
+          "transformer.ln_f.bias"
+        ],
+        "lora_updates": 1,
+        "lora_weight_audit": {
+          "global_step": 1,
+          "changed_parameters": [
+            "base_model.model.transformer.wte.modules_to_save.default.weight",
+            "base_model.model.transformer.h.0.attn.c_attn.lora_A.default.weight",
+            "base_model.model.transformer.h.0.attn.c_attn.lora_B.default.weight",
+            "base_model.model.transformer.h.0.attn.c_proj.lora_A.default.weight",
+            "base_model.model.transformer.h.0.attn.c_proj.lora_B.default.weight",
+            "base_model.model.transformer.h.0.mlp.c_fc.lora_A.default.weight",
+            "base_model.model.transformer.h.0.mlp.c_fc.lora_B.default.weight",
+            "base_model.model.transformer.h.0.mlp.c_proj.lora_A.default.weight",
+            "base_model.model.transformer.h.0.mlp.c_proj.lora_B.default.weight"
+          ],
+          "frozen_parameters_unchanged": true
+        },
+        "lora_summary": {
+          "peptide_type": "head_to_tail",
+          "timestamp": "2026-10-06T11:43:47",
+          "base_model_path": "/workspace/xsw/cyclo_release_audit/20261006_preupload_v2/training_smoke/tiny_base",
+          "base_tokenizer_path": "/workspace/xsw/cyclo_release_audit/20261006_preupload_v2/training_smoke/tiny_base",
+          "tokenizer_path": "/workspace/xsw/cyclo_release_audit/20261006_preupload_v2/training_smoke/lora/tokenizer",
+          "adapter_path": "/workspace/xsw/cyclo_release_audit/20261006_preupload_v2/training_smoke/lora/adapter_head_to_tail",
+          "checkpoint_dir": "/workspace/xsw/cyclo_release_audit/20261006_preupload_v2/training_smoke/lora/adapter_head_to_tail/checkpoints",
+          "seed": 42,
+          "split_summary": {
+            "total": 2,
+            "train": 2,
+            "val": 2,
+            "test": 2
+          },
+          "lora_config": {
+            "r": 2,
+            "lora_alpha": 4,
+            "lora_dropout": 0.1,
+            "target_modules": [
+              "c_attn",
+              "c_proj",
+              "c_fc"
+            ],
+            "modules_to_save": [
+              "wte"
+            ]
+          },
+          "trainable_parameters": 624,
+          "total_parameters": 4176,
+          "train_loss": 1.295395016670227,
+          "best_eval_loss": 1.296891689300537,
+          "val_metrics": {
+            "val_loss": 1.296891689300537,
+            "val_runtime": 0.0011,
+            "val_samples_per_second": 1779.887,
+            "val_steps_per_second": 889.944,
+            "epoch": 1
+          },
+          "test_metrics": {
+            "test_loss": 1.296891689300537,
+            "test_runtime": 0.001,
+            "test_samples_per_second": 1905.636,
+            "test_steps_per_second": 952.818,
+            "epoch": 1
+          },
+          "best_checkpoint": "/workspace/xsw/cyclo_release_audit/20261006_preupload_v2/training_smoke/lora/adapter_head_to_tail/checkpoints/checkpoint-1",
+          "command": "synthetic_cpu_smoke"
+        },
+        "not_a_paper_experiment": true
+      }
+    }
+  ],
+  "passed": true,
+  "no_full_training_or_bulk_generation": true,
+  "audit_date": "2026-10-06",
+  "validation_scope": "Remote current environment; no full training, bulk generation or clean-environment install.",
+  "validation_external_roots": {
+    "MOSES_ROOT": "/home/xsw/workingspace/moses/moses",
+    "SMILES2PEPTIDE_ROOT": "/home/xsw/workingspace/test2/third_party/SMILES2PEPTIDE",
+    "PEPTIVERSE_ROOT": "/home/xsw/workingspace/test2/third_party/PeptiVerse"
+  },
+  "release_decisions_pending": [
+    "Author has confirmed public release of code and datasets; project LICENSE not yet selected."
+  ]
+}

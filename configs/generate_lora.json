@@ -1,0 +1,18 @@
+{
+  "model_path": "runs/pretrain/final_model",
+  "tokenizer_path": "runs/lora/tokenizer",
+  "adapter_path": "runs/lora/adapter_head_to_tail",
+  "condition_type": "head_to_tail",
+  "output_dir": "runs/lora/generation_eval_n30000",
+  "output_filename": "head_to_tail_n30000.csv",
+  "num_samples": 30000,
+  "batch_size": 64,
+  "max_length": 1024,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "repetition_penalty": 1.0,
+  "do_evaluate": true,
+  "seed": 42,
+  "device": "cuda:0"
+}

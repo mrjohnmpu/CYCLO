@@ -1,0 +1,22 @@
+{
+  "model": "char_rnn",
+  "cyclization_type": "sc_to_tail",
+  "run_name": "char_rnn_sc_to_tail_full_20260423_145305",
+  "run_dir": "/workspace/xsw/test2_baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305",
+  "train_csv": "/home/xsw/workingspace/test2/data/restored_train.csv",
+  "val_csv": "/home/xsw/workingspace/test2/data/restored_validation.csv",
+  "train_limit": null,
+  "val_limit": null,
+  "num_train_rows": 179999,
+  "num_val_rows": 10001,
+  "seed": 42,
+  "device": "cuda:0",
+  "save_frequency": 20,
+  "elapsed_seconds": 35098.25813436508,
+  "checkpoint_paths": {
+    "model": "/workspace/xsw/test2_baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305/checkpoints/model.pt",
+    "vocab": "/workspace/xsw/test2_baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305/checkpoints/vocab.pt",
+    "config": "/workspace/xsw/test2_baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305/checkpoints/model_config.pt"
+  },
+  "log_file": "/workspace/xsw/test2_baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305/logs/train_log.csv"
+}

@@ -1,0 +1,24 @@
+{
+  "base_model_path": "runs/pretrain/final_model",
+  "tokenizer_path": "runs/pretrain/final_model",
+  "data_path": "./data/restored_validation.csv",
+  "output_dir": "runs/lora",
+  "peptide_types": [
+    "head_to_tail",
+    "sc_to_tail",
+    "disulfide_bridge"
+  ],
+  "train_ratio": 0.8,
+  "val_ratio": 0.1,
+  "seed": 42,
+  "batch_size": 16,
+  "num_epochs": 20,
+  "learning_rate": 0.0001,
+  "warmup_ratio": 0.03,
+  "grad_accum_steps": 4,
+  "early_stop_patience": 4,
+  "max_length": 1024,
+  "save_total_limit": 3,
+  "log_steps": 20,
+  "weight_decay": 0.01
+}

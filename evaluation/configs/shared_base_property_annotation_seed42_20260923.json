@@ -1,0 +1,18 @@
+{
+  "output_dir": "results/property_annotation_runs/shared_base_seed42/outputs",
+  "device": "cuda:0",
+  "inputs": [
+    {
+      "name": "head_to_tail_n30000",
+      "csv_path": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/head_to_tail_n30000.csv"
+    },
+    {
+      "name": "sc_to_tail_n30000",
+      "csv_path": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/sc_to_tail_n30000.csv"
+    },
+    {
+      "name": "disulfide_bridge_n30000",
+      "csv_path": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/disulfide_bridge_n30000.csv"
+    }
+  ]
+}

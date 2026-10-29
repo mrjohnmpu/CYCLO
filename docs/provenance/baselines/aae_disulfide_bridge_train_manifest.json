@@ -1,0 +1,22 @@
+{
+  "model": "aae",
+  "cyclization_type": "disulfide_bridge",
+  "run_name": "aae_disulfide_bridge_full_20260424_085703",
+  "run_dir": "/workspace/xsw/test2_baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703",
+  "train_csv": "/home/xsw/workingspace/test2/data/restored_train.csv",
+  "val_csv": "/home/xsw/workingspace/test2/data/restored_validation.csv",
+  "train_limit": null,
+  "val_limit": null,
+  "num_train_rows": 180000,
+  "num_val_rows": 10000,
+  "seed": 42,
+  "device": "cuda:1",
+  "save_frequency": 20,
+  "elapsed_seconds": 16542.252401590347,
+  "checkpoint_paths": {
+    "model": "/workspace/xsw/test2_baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703/checkpoints/model.pt",
+    "vocab": "/workspace/xsw/test2_baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703/checkpoints/vocab.pt",
+    "config": "/workspace/xsw/test2_baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703/checkpoints/model_config.pt"
+  },
+  "log_file": "/workspace/xsw/test2_baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703/logs/train_log.csv"
+}

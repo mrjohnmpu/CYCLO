@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "description": "Paper sequence sources for baseline, TopoCycGPT, property-RL, and KRAS-RL analyses.",
+  "sources": [
+    {
+      "dataset_id": "aae_head_to_tail",
+      "category": "basic_generation",
+      "method": "AAE",
+      "stage": "baseline",
+      "cyclization": "head_to_tail",
+      "path": "runs/baselines/aae_head_to_tail_vs_lora_20260422/generated/aae_head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.7867,
+      "relative_output": "basic_generation/aae_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "aae_sc_to_tail",
+      "category": "basic_generation",
+      "method": "AAE",
+      "stage": "baseline",
+      "cyclization": "sc_to_tail",
+      "path": "runs/baselines/runs/aae/sc_to_tail/aae_sc_to_tail_full_20260423_141310/generated/aae_sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.8016,
+      "relative_output": "basic_generation/aae_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "aae_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "AAE",
+      "stage": "baseline",
+      "cyclization": "disulfide_bridge",
+      "path": "runs/baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703/generated/aae_disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9726,
+      "relative_output": "basic_generation/aae_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "vae_head_to_tail",
+      "category": "basic_generation",
+      "method": "VAE",
+      "stage": "baseline",
+      "cyclization": "head_to_tail",
+      "path": "runs/baselines/runs/vae/head_to_tail/vae_head_to_tail_full_20260422_185749/generated/vae_head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9513,
+      "relative_output": "basic_generation/vae_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "vae_sc_to_tail",
+      "category": "basic_generation",
+      "method": "VAE",
+      "stage": "baseline",
+      "cyclization": "sc_to_tail",
+      "path": "runs/baselines/runs/vae/sc_to_tail/vae_sc_to_tail_full_20260423_145305/generated/vae_sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9338,
+      "relative_output": "basic_generation/vae_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "vae_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "VAE",
+      "stage": "baseline",
+      "cyclization": "disulfide_bridge",
+      "path": "runs/baselines/runs/vae/disulfide_bridge/vae_disulfide_bridge_full_20260424_085703/generated/vae_disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9478,
+      "relative_output": "basic_generation/vae_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "charrnn_head_to_tail",
+      "category": "basic_generation",
+      "method": "CharRNN",
+      "stage": "baseline",
+      "cyclization": "head_to_tail",
+      "path": "runs/baselines/runs/char_rnn/head_to_tail/char_rnn_head_to_tail_full_20260422_183413/generated/char_rnn_head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9788,
+      "relative_output": "basic_generation/charrnn_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "charrnn_sc_to_tail",
+      "category": "basic_generation",
+      "method": "CharRNN",
+      "stage": "baseline",
+      "cyclization": "sc_to_tail",
+      "path": "runs/baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305/generated/char_rnn_sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9266,
+      "relative_output": "basic_generation/charrnn_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "charrnn_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "CharRNN",
+      "stage": "baseline",
+      "cyclization": "disulfide_bridge",
+      "path": "runs/baselines/runs/char_rnn/disulfide_bridge/char_rnn_disulfide_bridge_full_20260424_085703/generated/char_rnn_disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9434,
+      "relative_output": "basic_generation/charrnn_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent30_head_to_tail",
+      "category": "basic_generation",
+      "method": "PepINVENT-30",
+      "stage": "baseline",
+      "cyclization": "head_to_tail",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_30_head_to_tail_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.98,
+      "relative_output": "basic_generation/pepinvent30_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent30_sc_to_tail",
+      "category": "basic_generation",
+      "method": "PepINVENT-30",
+      "stage": "baseline",
+      "cyclization": "sc_to_tail",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_30_sc_to_tail_protect_topology_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.9807,
+      "relative_output": "basic_generation/pepinvent30_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent30_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "PepINVENT-30",
+      "stage": "baseline",
+      "cyclization": "disulfide_bridge",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_30_disulfide_bridge_protect_topology_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.9972,
+      "relative_output": "basic_generation/pepinvent30_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent50_head_to_tail",
+      "category": "basic_generation",
+      "method": "PepINVENT-50",
+      "stage": "baseline",
+      "cyclization": "head_to_tail",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_50_head_to_tail_keep_ends_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.9447,
+      "relative_output": "basic_generation/pepinvent50_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent50_sc_to_tail",
+      "category": "basic_generation",
+      "method": "PepINVENT-50",
+      "stage": "baseline",
+      "cyclization": "sc_to_tail",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_50_sc_to_tail_protect_topology_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.952,
+      "relative_output": "basic_generation/pepinvent50_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent50_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "PepINVENT-50",
+      "stage": "baseline",
+      "cyclization": "disulfide_bridge",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_50_disulfide_bridge_protect_topology_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.9938,
+      "relative_output": "basic_generation/pepinvent50_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent70_head_to_tail",
+      "category": "basic_generation",
+      "method": "PepINVENT-70",
+      "stage": "baseline",
+      "cyclization": "head_to_tail",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_70_head_to_tail_keep_ends_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.7195,
+      "relative_output": "basic_generation/pepinvent70_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent70_sc_to_tail",
+      "category": "basic_generation",
+      "method": "PepINVENT-70",
+      "stage": "baseline",
+      "cyclization": "sc_to_tail",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_70_sc_to_tail_protect_topology_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.7665,
+      "relative_output": "basic_generation/pepinvent70_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "pepinvent70_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "PepINVENT-70",
+      "stage": "baseline",
+      "cyclization": "disulfide_bridge",
+      "path": "./output/generated/pepinvent/pepinvent_generated_masked_70_disulfide_bridge_protect_topology_processed.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [],
+      "manuscript_validity": 0.8916,
+      "relative_output": "basic_generation/pepinvent70_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "topocycgpt_head_to_tail",
+      "category": "basic_generation",
+      "method": "TopoCycGPT",
+      "stage": "before_rl",
+      "cyclization": "head_to_tail",
+      "path": "runs/lora/generation_eval_n30000/head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9994,
+      "relative_output": "basic_generation/topocycgpt_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "topocycgpt_sc_to_tail",
+      "category": "basic_generation",
+      "method": "TopoCycGPT",
+      "stage": "before_rl",
+      "cyclization": "sc_to_tail",
+      "path": "runs/lora/generation_eval_n30000/sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 0.9995,
+      "relative_output": "basic_generation/topocycgpt_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "topocycgpt_disulfide_bridge",
+      "category": "basic_generation",
+      "method": "TopoCycGPT",
+      "stage": "before_rl",
+      "cyclization": "disulfide_bridge",
+      "path": "runs/lora/generation_eval_n30000/disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "manuscript_validity": 1.0,
+      "relative_output": "basic_generation/topocycgpt_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "rl_before_head_to_tail",
+      "category": "rl_comparison",
+      "method": "TopoCycGPT",
+      "stage": "before_rl",
+      "cyclization": "head_to_tail",
+      "path": "results/property_annotation_runs/20260615_225633_parsed_peptides_dual_gpu/gpu0_outputs/head_to_tail_parsed_peptides.with_properties.csv",
+      "smiles_column": "input_smiles",
+      "source_validity": [],
+      "relative_output": "rl_comparison/topocycgpt_before_rl_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "rl_after_head_to_tail",
+      "category": "rl_comparison",
+      "method": "TopoCycGPT",
+      "stage": "after_rl",
+      "cyclization": "head_to_tail",
+      "path": "results/property_annotation_runs/20260615_225633_parsed_peptides_dual_gpu/gpu1_outputs/ppo_head_to_tail_parsed_peptides.with_properties.csv",
+      "smiles_column": "input_smiles",
+      "source_validity": [],
+      "relative_output": "rl_comparison/topocycgpt_after_rl_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "rl_before_sc_to_tail",
+      "category": "rl_comparison",
+      "method": "TopoCycGPT",
+      "stage": "before_rl",
+      "cyclization": "sc_to_tail",
+      "path": "results/property_annotation_runs/20260615_225633_parsed_peptides_dual_gpu/gpu0_outputs/sc_to_tail_parsed_peptides.with_properties.csv",
+      "smiles_column": "input_smiles",
+      "source_validity": [],
+      "relative_output": "rl_comparison/topocycgpt_before_rl_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "rl_after_sc_to_tail",
+      "category": "rl_comparison",
+      "method": "TopoCycGPT",
+      "stage": "after_rl",
+      "cyclization": "sc_to_tail",
+      "path": "results/property_annotation_runs/20260615_225633_parsed_peptides_dual_gpu/gpu1_outputs/ppo_sc_to_tail_parsed_peptides.with_properties.csv",
+      "smiles_column": "input_smiles",
+      "source_validity": [],
+      "relative_output": "rl_comparison/topocycgpt_after_rl_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "rl_before_disulfide_bridge",
+      "category": "rl_comparison",
+      "method": "TopoCycGPT",
+      "stage": "before_rl",
+      "cyclization": "disulfide_bridge",
+      "path": "results/property_annotation_runs/20260615_225633_parsed_peptides_dual_gpu/gpu0_outputs/disulfide_bridge_parsed_peptides.with_properties.csv",
+      "smiles_column": "input_smiles",
+      "source_validity": [],
+      "relative_output": "rl_comparison/topocycgpt_before_rl_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "rl_after_disulfide_bridge",
+      "category": "rl_comparison",
+      "method": "TopoCycGPT",
+      "stage": "after_rl",
+      "cyclization": "disulfide_bridge",
+      "path": "results/property_annotation_runs/20260616_103010_ppo_disulfide_bridge_parsed_peptides_gpu1/gpu1_outputs/ppo_disulfide_bridge_parsed_peptides.with_properties.csv",
+      "smiles_column": "input_smiles",
+      "source_validity": [],
+      "relative_output": "rl_comparison/topocycgpt_after_rl_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "kras_after_rl_head_to_tail",
+      "category": "kras_design",
+      "method": "TopoCycGPT-KRAS",
+      "stage": "after_kras_rl",
+      "cyclization": "head_to_tail",
+      "path": "results/kras_design/20260524_ppo_step300_lam1_b128_n30000_eval_v1/properties/ppo_step300_head_to_tail_n30000.kras.with_properties.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        },
+        {
+          "column": "kras_valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "kras_design/topocycgpt_after_kras_rl_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "shared_token_lora_head_to_tail",
+      "category": "ablation",
+      "method": "Shared token+LoRA",
+      "stage": "shared_token_lora",
+      "cyclization": "head_to_tail",
+      "path": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "ablation/shared_token_lora_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "shared_token_lora_sc_to_tail",
+      "category": "ablation",
+      "method": "Shared token+LoRA",
+      "stage": "shared_token_lora",
+      "cyclization": "sc_to_tail",
+      "path": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "ablation/shared_token_lora_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "shared_token_lora_disulfide_bridge",
+      "category": "ablation",
+      "method": "Shared token+LoRA",
+      "stage": "shared_token_lora",
+      "cyclization": "disulfide_bridge",
+      "path": "results/ablations/shared_strict_token_lora_r64_seed42_20260914/disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "ablation/shared_token_lora_disulfide_bridge.valid_smiles.csv"
+    }
+  ]
+}

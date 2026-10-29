@@ -1,0 +1,25 @@
+{
+  "python": "3.12.11",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "transformers": "5.6.2",
+    "peft": "0.18.0",
+    "accelerate": "1.12.0",
+    "trl": "1.2.0",
+    "datasets": "4.8.4",
+    "numpy": "2.2.6",
+    "pandas": "2.3.0",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.8.0",
+    "rdkit": "2025.9.3",
+    "matplotlib": "3.10.3",
+    "seaborn": "0.13.2",
+    "xgboost": "3.1.3",
+    "joblib": "1.5.1",
+    "networkx": "3.6.1",
+    "httpx": "0.28.1",
+    "tqdm": "4.67.1",
+    "tensorboard": "2.19.0"
+  },
+  "purpose": "Observed release validation environment, not historical lock"
+}

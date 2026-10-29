@@ -1,0 +1,18 @@
+{
+  "base_model_path": "runs/pretrain/final_model",
+  "tokenizer_path": "runs/lora/tokenizer",
+  "lora_adapter_path": "runs/ppo_head_to_tail_perm_hemo_kras_v2_lam1_b128_full_finetune_s500_20260524/agent_step300",
+  "checkpoint_mode": "full_finetune",
+  "condition_type": "head_to_tail",
+  "output_dir": "outputs/ppo_kras",
+  "output_filename": "ppo_kras_n30000.csv",
+  "num_samples": 30000,
+  "batch_size": 64,
+  "max_length": 1024,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "seed": 42,
+  "device": "cuda:0",
+  "checkpoint_tag": "step300"
+}

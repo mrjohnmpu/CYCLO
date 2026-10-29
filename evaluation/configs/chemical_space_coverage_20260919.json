@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "description": "Topology-stratified memorization, nearest-neighbor novelty, scaffold novelty, SNN, and reverse reference coverage analysis.",
+  "source_manifest": "./evaluation/analysis/configs/paper_sequence_sources_20260904.json",
+  "training_csv": "./data/restored_train.csv",
+  "reference_csv": "./data/restored_validation.csv",
+  "output_root": "results/chemical_space_coverage/20260919_v1",
+  "topologies": [
+    "head_to_tail",
+    "sc_to_tail",
+    "disulfide_bridge"
+  ],
+  "model_order": [
+    "AAE",
+    "VAE",
+    "CharRNN",
+    "PepINVENT-30",
+    "PepINVENT-50",
+    "PepINVENT-70",
+    "TopoCycGPT"
+  ],
+  "models": {
+    "AAE": {
+      "model": "AAE",
+      "model_family": "AAE"
+    },
+    "VAE": {
+      "model": "VAE",
+      "model_family": "VAE"
+    },
+    "CharRNN": {
+      "model": "CharRNN",
+      "model_family": "CharRNN"
+    },
+    "PepINVENT-30": {
+      "model": "PepINVENT-30",
+      "model_family": "PepINVENT"
+    },
+    "PepINVENT-50": {
+      "model": "PepINVENT-50",
+      "model_family": "PepINVENT"
+    },
+    "PepINVENT-70": {
+      "model": "PepINVENT-70",
+      "model_family": "PepINVENT"
+    },
+    "TopoCycGPT": {
+      "model": "TopoCycGPT",
+      "model_family": "TopoCycGPT"
+    }
+  },
+  "dataset_ids": [
+    "aae_head_to_tail",
+    "aae_sc_to_tail",
+    "aae_disulfide_bridge",
+    "vae_head_to_tail",
+    "vae_sc_to_tail",
+    "vae_disulfide_bridge",
+    "charrnn_head_to_tail",
+    "charrnn_sc_to_tail",
+    "charrnn_disulfide_bridge",
+    "pepinvent30_head_to_tail",
+    "pepinvent30_sc_to_tail",
+    "pepinvent30_disulfide_bridge",
+    "pepinvent50_head_to_tail",
+    "pepinvent50_sc_to_tail",
+    "pepinvent50_disulfide_bridge",
+    "pepinvent70_head_to_tail",
+    "pepinvent70_sc_to_tail",
+    "pepinvent70_disulfide_bridge",
+    "topocycgpt_head_to_tail",
+    "topocycgpt_sc_to_tail",
+    "topocycgpt_disulfide_bridge"
+  ],
+  "fingerprint": {
+    "type": "Morgan",
+    "radius": 2,
+    "n_bits": 1024,
+    "use_chirality": false
+  },
+  "nn_novelty_thresholds": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "coverage_thresholds": [
+    0.4,
+    0.6,
+    0.8
+  ],
+  "coverage_curve_step": 0.01,
+  "snn_validation_tolerance": 1e-06,
+  "max_empty_scaffold_fraction": 0.01,
+  "figure_formats": [
+    "pdf",
+    "svg",
+    "png",
+    "tiff"
+  ],
+  "existing_snn_metrics": {
+    "aae_head_to_tail": "./baselines/test2_baselines/aae_head_to_tail_vs_lora_20260422/metrics/aae/metrics.json",
+    "aae_sc_to_tail": "./baselines/test2_baselines/runs/aae/sc_to_tail/aae_sc_to_tail_full_20260423_141310/metrics/aae_sc_to_tail_n30000/metrics.json",
+    "aae_disulfide_bridge": "./baselines/test2_baselines/runs/aae/disulfide_bridge/aae_disulfide_bridge_full_20260424_085703/metrics/aae_disulfide_bridge_n30000/metrics.json",
+    "vae_head_to_tail": "./baselines/test2_baselines/runs/vae/head_to_tail/vae_head_to_tail_full_20260422_185749/metrics/vae_head_to_tail_n30000/metrics.json",
+    "vae_sc_to_tail": "./baselines/test2_baselines/runs/vae/sc_to_tail/vae_sc_to_tail_full_20260423_145305/metrics/vae_sc_to_tail_n30000/metrics.json",
+    "vae_disulfide_bridge": "./baselines/test2_baselines/runs/vae/disulfide_bridge/vae_disulfide_bridge_full_20260424_085703/metrics/vae_disulfide_bridge_n30000/metrics.json",
+    "charrnn_head_to_tail": "./baselines/test2_baselines/runs/char_rnn/head_to_tail/char_rnn_head_to_tail_full_20260422_183413/metrics/char_rnn_head_to_tail_n30000/metrics.json",
+    "charrnn_sc_to_tail": "./baselines/test2_baselines/runs/char_rnn/sc_to_tail/char_rnn_sc_to_tail_full_20260423_145305/metrics/char_rnn_sc_to_tail_n30000/metrics.json",
+    "charrnn_disulfide_bridge": "./baselines/test2_baselines/runs/char_rnn/disulfide_bridge/char_rnn_disulfide_bridge_full_20260424_085703/metrics/char_rnn_disulfide_bridge_n30000/metrics.json",
+    "pepinvent30_head_to_tail": "./output/generated/pepinvent/metrics/pepinvent_mask30_head_to_tail/metrics.json",
+    "pepinvent30_sc_to_tail": "./output/generated/pepinvent/metrics/pepinvent_mask30_sc_to_tail_protect_topology/metrics.json",
+    "pepinvent30_disulfide_bridge": "./output/generated/pepinvent/metrics/pepinvent_mask30_disulfide_bridge_protect_topology/metrics.json",
+    "pepinvent50_head_to_tail": "./output/generated/pepinvent/metrics/pepinvent_mask50_head_to_tail_keep_ends/metrics.json",
+    "pepinvent50_sc_to_tail": "./output/generated/pepinvent/metrics/pepinvent_mask50_sc_to_tail_protect_topology/metrics.json",
+    "pepinvent50_disulfide_bridge": "./output/generated/pepinvent/metrics/pepinvent_mask50_disulfide_bridge_protect_topology/metrics.json",
+    "pepinvent70_head_to_tail": "./output/generated/pepinvent/metrics/pepinvent_mask70_head_to_tail_keep_ends/metrics.json",
+    "pepinvent70_sc_to_tail": "./output/generated/pepinvent/metrics/pepinvent_mask70_sc_to_tail_protect_topology/metrics.json",
+    "pepinvent70_disulfide_bridge": "./output/generated/pepinvent/metrics/pepinvent_mask70_disulfide_bridge_protect_topology/metrics.json",
+    "topocycgpt_head_to_tail": "./baselines/test2_baselines/aae_head_to_tail_vs_lora_20260422/metrics/lora/metrics.json",
+    "topocycgpt_sc_to_tail": "runs/lora/generation_eval_n30000/metrics_sc_to_tail_n30000/metrics.json",
+    "topocycgpt_disulfide_bridge": "runs/lora/generation_eval_n30000/metrics_disulfide_bridge_n30000/metrics.json"
+  }
+}

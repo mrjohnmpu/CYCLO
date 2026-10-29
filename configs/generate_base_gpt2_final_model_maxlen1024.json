@@ -1,0 +1,13 @@
+{
+  "model_path": "runs/pretrain/final_model",
+  "output_dir": "./output/generated/base_gpt2_final_model",
+  "output_filename": "final_model_generated_30000_maxlen1024.csv",
+  "num_samples": 30000,
+  "batch_size": 64,
+  "max_length": 1024,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "seed": 42,
+  "device": "cuda:1"
+}

@@ -1,0 +1,18 @@
+{
+  "run_name": "ppo_full_finetune_peptiverse_perm_hemo_disulfide_bridge_step2200_n30000_20260615",
+  "checkpoint_path": "/workspace/xsw/test2_runs/ppo_disulfide_bridge_perm_hemo_v3_full_finetune_len512_b64_mini8_lr3e6_kl007_tkl003_20260612/agent_step2200",
+  "base_model_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+  "checkpoint_mode": "full_finetune_direct",
+  "condition_type": "disulfide_bridge",
+  "num_samples": 30000,
+  "batch_size": 64,
+  "max_length": 512,
+  "temperature": 0.8,
+  "top_k": 50,
+  "top_p": 0.95,
+  "seed": 42,
+  "device": "cuda:0",
+  "checkpoint_tag": "step2200",
+  "objective_tag": "perm_hemo",
+  "scorer_tag": "ppo_full_finetune"
+}

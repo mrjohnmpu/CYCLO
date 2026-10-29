@@ -1,0 +1,9 @@
+{
+  "stage": "sample",
+  "generated_csv": "/workspace/xsw/test2_baselines/aae_head_to_tail_vs_lora_20260422/generated/aae_head_to_tail_n30000.csv",
+  "aae_metrics_json": "/workspace/xsw/test2_baselines/aae_head_to_tail_vs_lora_20260422/metrics/aae/metrics.json",
+  "lora_metrics_json": "/workspace/xsw/test2_baselines/aae_head_to_tail_vs_lora_20260422/metrics/lora/metrics.json",
+  "summary_csv": "/workspace/xsw/test2_baselines/aae_head_to_tail_vs_lora_20260422/summary/aae_vs_lora_head_to_tail.csv",
+  "summary_md": "/workspace/xsw/test2_baselines/aae_head_to_tail_vs_lora_20260422/summary/aae_vs_lora_head_to_tail.md",
+  "completed_at": "2026-04-22 18:03:25"
+}

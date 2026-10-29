@@ -1,0 +1,52 @@
+{
+  "datasets": [
+    {
+      "id": "reference",
+      "label": "Reference",
+      "role": "reference",
+      "path": "results/property_annotation_runs/20260429_115158_restored_validation_gpu0/gpu0_outputs/restored_validation.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "aae",
+      "label": "AAE",
+      "role": "baseline",
+      "path": "results/property_annotation_runs/20260427_220128_aae_n30000_dual_gpu/gpu1_outputs/aae_sc_to_tail_n30000.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "vae",
+      "label": "VAE",
+      "role": "baseline",
+      "path": "results/property_annotation_runs/20260428_104307_vae_n30000_dual_gpu/gpu1_outputs/vae_sc_to_tail_n30000.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "charrnn",
+      "label": "CharRNN",
+      "role": "baseline",
+      "path": "results/property_annotation_runs/20260428_130517_char_rnn_n30000_dual_gpu/gpu1_outputs/char_rnn_sc_to_tail_n30000.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "pepinvent_mask_30",
+      "label": "PepINVENT 30",
+      "role": "baseline",
+      "path": "results/property_annotation_runs/20260428_160615_pepinvent_nine_csv_dual_gpu/gpu0_outputs/pepinvent_generated_masked_30_sc_to_tail_protect_topology_processed.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "pepinvent_mask_50",
+      "label": "PepINVENT 50",
+      "role": "baseline",
+      "path": "results/property_annotation_runs/20260428_160615_pepinvent_nine_csv_dual_gpu/gpu1_outputs/pepinvent_generated_masked_50_sc_to_tail_protect_topology_processed.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "pepinvent_mask_70",
+      "label": "PepINVENT 70",
+      "role": "baseline",
+      "path": "results/property_annotation_runs/20260428_160615_pepinvent_nine_csv_dual_gpu/gpu1_outputs/pepinvent_generated_masked_70_sc_to_tail_protect_topology_processed.with_properties.with_smiles2peptide.csv"
+    },
+    {
+      "id": "ours",
+      "label": "Shared token+LoRA",
+      "role": "highlight",
+      "path": "results/property_annotation_runs/shared_base_seed42/outputs/sc_to_tail_n30000.with_properties.csv"
+    }
+  ]
+}

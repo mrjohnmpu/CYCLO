@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-09-14T14:21:18",
+  "base_model_path": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model",
+  "condition_token_ids": {
+    "head_to_tail": 2140,
+    "sc_to_tail": 2141,
+    "disulfide_bridge": 2142
+  },
+  "seed": 42,
+  "split_summary": {
+    "head_to_tail": {
+      "train": 7999,
+      "val": 1000,
+      "test": 1000
+    },
+    "sc_to_tail": {
+      "train": 8001,
+      "val": 1000,
+      "test": 1000
+    },
+    "disulfide_bridge": {
+      "train": 8000,
+      "val": 1000,
+      "test": 1000
+    }
+  },
+  "manifest_sha256": "4abf34a90963c537ba5ea9cbf8c73fa5d075355d19dbd31884a691db083f586c",
+  "lora_r": 64,
+  "lora_alpha": 128,
+  "lora_dropout": 0.1,
+  "target_modules": [
+    "c_attn",
+    "c_proj",
+    "c_fc"
+  ],
+  "trainable_parameters": 9439488,
+  "expected_trainable_parameters": 9439488,
+  "train_samples": 24000,
+  "val_samples": 3000,
+  "train_loss": 0.2758985095553928,
+  "best_eval_loss": 0.2764575481414795,
+  "best_checkpoint": "/workspace/xsw/test2_runs/ablation_shared_strict_token_lora_r64_seed42_20260914/checkpoints/checkpoint-750",
+  "frozen_hash_before": null,
+  "frozen_hash_after": null,
+  "trainable_hashes_before": null,
+  "trainable_hashes_after": null,
+  "command": "/home/xsw/workingspace/test2/model/training/ablation/train_shared_strict_token_lora.py --config /home/xsw/workingspace/test2/configs/ablation/shared_strict_token_lora_r64_seed42.json"
+}

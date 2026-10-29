@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "description": "Independent non-shared topology ablations; generated files are external inputs.",
+  "sources": [
+    {
+      "dataset_id": "token_only_head_to_tail",
+      "category": "ablation",
+      "method": "Token-only",
+      "stage": "token_only",
+      "cyclization": "head_to_tail",
+      "path": "results/ablations/token_only_frozen_prior_seed42_20260913/head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "token_only_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "token_only_sc_to_tail",
+      "category": "ablation",
+      "method": "Token-only",
+      "stage": "token_only",
+      "cyclization": "sc_to_tail",
+      "path": "results/ablations/token_only_frozen_prior_seed42_20260913/sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "token_only_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "token_only_disulfide_bridge",
+      "category": "ablation",
+      "method": "Token-only",
+      "stage": "token_only",
+      "cyclization": "disulfide_bridge",
+      "path": "results/ablations/token_only_frozen_prior_seed42_20260913/disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "token_only_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "lora_only_head_to_tail",
+      "category": "ablation",
+      "method": "LoRA-only",
+      "stage": "lora_only_no_token",
+      "cyclization": "head_to_tail",
+      "path": "results/ablations/lora_only_no_token_seed42_20260913/head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "lora_only_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "lora_only_sc_to_tail",
+      "category": "ablation",
+      "method": "LoRA-only",
+      "stage": "lora_only_no_token",
+      "cyclization": "sc_to_tail",
+      "path": "results/ablations/lora_only_no_token_seed42_20260913/sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "lora_only_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "lora_only_disulfide_bridge",
+      "category": "ablation",
+      "method": "LoRA-only",
+      "stage": "lora_only_no_token",
+      "cyclization": "disulfide_bridge",
+      "path": "results/ablations/lora_only_no_token_seed42_20260913/disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "lora_only_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "strict_token_lora_head_to_tail",
+      "category": "ablation",
+      "method": "Strict token+LoRA",
+      "stage": "strict_token_lora",
+      "cyclization": "head_to_tail",
+      "path": "results/ablations/strict_token_lora_seed42_20260913/head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "strict_token_lora_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "strict_token_lora_sc_to_tail",
+      "category": "ablation",
+      "method": "Strict token+LoRA",
+      "stage": "strict_token_lora",
+      "cyclization": "sc_to_tail",
+      "path": "results/ablations/strict_token_lora_seed42_20260913/sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "strict_token_lora_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "strict_token_lora_disulfide_bridge",
+      "category": "ablation",
+      "method": "Strict token+LoRA",
+      "stage": "strict_token_lora",
+      "cyclization": "disulfide_bridge",
+      "path": "results/ablations/strict_token_lora_seed42_20260913/disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "strict_token_lora_disulfide_bridge.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "full_finetune_head_to_tail",
+      "category": "ablation",
+      "method": "Full fine-tune",
+      "stage": "full_finetune",
+      "cyclization": "head_to_tail",
+      "path": "results/ablations/full_finetune_strict_token_seed42_20260914/head_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "full_finetune_head_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "full_finetune_sc_to_tail",
+      "category": "ablation",
+      "method": "Full fine-tune",
+      "stage": "full_finetune",
+      "cyclization": "sc_to_tail",
+      "path": "results/ablations/full_finetune_strict_token_seed42_20260914/sc_to_tail_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "full_finetune_sc_to_tail.valid_smiles.csv"
+    },
+    {
+      "dataset_id": "full_finetune_disulfide_bridge",
+      "category": "ablation",
+      "method": "Full fine-tune",
+      "stage": "full_finetune",
+      "cyclization": "disulfide_bridge",
+      "path": "results/ablations/full_finetune_strict_token_seed42_20260914/disulfide_bridge_n30000.csv",
+      "smiles_column": "SMILES",
+      "source_validity": [
+        {
+          "column": "Valid",
+          "kind": "bool_true"
+        }
+      ],
+      "relative_output": "full_finetune_disulfide_bridge.valid_smiles.csv"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "source": "/home/xsw/workingspace/test2/third_party/PeptiVerse/inference.py",
+      "bytes": 37509,
+      "sha256": "a8a1859d5113ae6b7ee1e155ceec1a0e9d8dcac2df6f5f21a7cb7301a7ba220e",
+      "distributed": false
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/third_party/PeptiVerse/best_models.txt",
+      "bytes": 543,
+      "sha256": "2d367525f241b909df3a74c573e2f4930b5b73220458fb668d61a256e92924f4",
+      "distributed": false
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/third_party/PeptiVerse/requirements.txt",
+      "bytes": 193,
+      "sha256": "4ed1d8fbdbc727c0a0f8d5e40ddf93832729d50126415bf048d07912feb022ae",
+      "distributed": false
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/third_party/SMILES2PEPTIDE/app.py",
+      "bytes": 63001,
+      "sha256": "deba921a34bdaa0feed956eae3682601768ad52e1a437ac0f03fa17e4a73b75d",
+      "distributed": false
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/third_party/SMILES2PEPTIDE/aminoacid_selective.py",
+      "bytes": 15641,
+      "sha256": "0b93de5beb1be56fa3fdf3462155c50c67c66c9dd71bff19a8e9e0f9cb18f457",
+      "distributed": false
+    },
+    {
+      "source": "/home/xsw/workingspace/test2/data/kras_kd/kras_xgboost_reg.pkl",
+      "bytes": 3113545,
+      "sha256": "bbdef8342266b5b8b9059c0b02beb7f83e58ac499caddebb07a53aa003ec7255",
+      "distributed": false
+    },
+    {
+      "source": "/workspace/xsw/test2_runs/pretrain_gpt2_20260420_021323/final_model/tokenizer.json",
+      "bytes": 149329,
+      "sha256": "2b7110c1cee9b415c818435dc75c6d55c5f55442dc65eb850011608a44315f44",
+      "distributed": false
+    },
+    {
+      "source": "/workspace/xsw/test2_runs/lora_cyclic_only_from_pretrain_len1024_b64_e20_v1/tokenizer/tokenizer.json",
+      "bytes": 150066,
+      "sha256": "9a0a50fd4c8c1dbfcb438fae8b43b9301eaae74cb6bc311a7b720e50dc30f972",
+      "distributed": false
+    }
+  ]
+}
